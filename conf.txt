@@ -1,0 +1,18 @@
+; HTTP File Server Configuration
+; 目录已固定为: C:\Users\peter\Documents\http_server_python\data
+
+[server]
+port = 8080
+
+[logging]
+enable_access_log = true
+log_to_file = false
+log_file = server.log
+
+[security]
+directory_listing = true
+cors_origin = *
+
+[advanced]
+bind_address = 0.0.0.0
+index_files = index.html,index.htm,default.html
